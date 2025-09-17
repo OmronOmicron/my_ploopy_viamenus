@@ -10,5 +10,12 @@
 *.bin
 *.uf2
 
-# User defined
+# env specific ingore
 .vscode
+
+# folders to ignore
+keyboards/ploopyco/mouse/
+keyboards/ploopyco/trackball/
+keyboards/ploopyco/trackball_mini/
+keyboards/ploopyco/trackball_nano/
+keyboards/ploopyco/trackball_thumb/
