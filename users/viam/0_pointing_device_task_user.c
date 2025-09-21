@@ -1,9 +1,7 @@
 #if defined(BETTER_DRAGSCROLL) // any condition requiring a pointing_device_task_user
   #pragma once
 
-    #if defined(COMMUNITY_MODULE_MOUSE_JIGGLER_ENABLE)
-      #include "mouse_jiggler.h"
-    #endif // defined(COMMUNITY_MODULE_MOUSE_JIGGLER_ENABLE)
+    // mouse_jiggler removed: no includes
 
   report_mouse_t pointing_device_task_user(report_mouse_t mouse_report) {
     #if defined(BETTER_DRAGSCROLL)
