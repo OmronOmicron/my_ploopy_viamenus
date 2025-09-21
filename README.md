@@ -35,20 +35,13 @@ Kinda improved version of dragscroll.
 ### Drag-volume
 While this key is held, pointer movement is stopped and up/down movement adjusts volume.
 
-### Mouse Jiggler 
-The pointer will move an imperceptably small amount, in a pseudo-random direction at a pseudo-random interval.
-This should be enough to keep your computer awake when you're not using it, but since it's only 1-2 px at a time, it's small enough that it doesn't hinder normal mouse usage.
-_I am not liable for any disciplinary action taken by your employer!_
-The jiggler will draw a circle to confirm it has been enabled, and a horizontal line to show when it's turned off.
-Can be switched on/off by key press, via menu or gesture.
-
 ### Sniper mode
 Change DPI while the appropriate button is held
 Called this "sniper" mode since it's useful for fine movement, but could also be used with a high DPI instead.
 
 ### Gestures
 Similar to _"Wiggleball"_ 
-Wiggle the cursor to enable dragscroll or mouse jiggler (or not, if you prefer)
+Wiggle the cursor to enable dragscroll
 
 ### Task Switcher
 Keys allow you to "alt tab" between open Windows. 
