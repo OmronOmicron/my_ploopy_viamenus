@@ -15,16 +15,7 @@
     const uint16_t PROGMEM pl_combo_ms1d[] = {MS_BTN1, BETTER_DRAG_SCROLL_MOMENTARY, COMBO_END};
     const uint16_t PROGMEM pl_combo_ms2d[] = {MS_BTN2, BETTER_DRAG_SCROLL_MOMENTARY, COMBO_END};
 
-    #if defined(COMMUNITY_MODULE_MOUSE_JIGGLER_ENABLE)
-      const uint16_t PROGMEM pl_combo_ms14[] = {MS_BTN1, MS_BTN4, COMBO_END};
-      const uint16_t PROGMEM pl_combo_ms14_lt1[] = {MS_BTN1 , LT(1, MS_BTN4), COMBO_END};
-      const uint16_t PROGMEM pl_combo_ms45[] = {MS_BTN4, MS_BTN5, COMBO_END};
-      const uint16_t PROGMEM pl_combo_ms45_lt01[] = {MS_BTN4 , LT(1, MS_BTN5), COMBO_END};
-      const uint16_t PROGMEM pl_combo_ms45_lt02[] = {MS_BTN4 , LT(2, MS_BTN5), COMBO_END};
-      const uint16_t PROGMEM pl_combo_ms45_lt10[] = {LT(1, MS_BTN4) , MS_BTN5, COMBO_END};
-      const uint16_t PROGMEM pl_combo_ms45_lt11[] = {LT(1, MS_BTN4) , LT(1, MS_BTN5), COMBO_END};
-      const uint16_t PROGMEM pl_combo_ms45_lt12[] = {LT(1, MS_BTN4) , LT(2, MS_BTN5), COMBO_END};
-    #endif // defined(COMMUNITY_MODULE_MOUSE_JIGGLER_ENABLE)
+    // mouse_jiggler combos removed
 
     combo_t key_combos[] = {
       #if defined(TAP_DANCE_ENABLE) && defined(BETTER_DRAGSCROLL_TAPDANCE)
@@ -45,16 +36,7 @@
       COMBO(pl_combo_ms1d,  BETTER_DRAG_SCROLL_TOGGLE),
       COMBO(pl_combo_ms2d,  BETTER_DRAG_SCROLL_TOGGLE),
 
-      #if defined(COMMUNITY_MODULE_MOUSE_JIGGLER_ENABLE)
-        COMBO(pl_combo_ms14,  CM_MSJG),
-        COMBO(pl_combo_ms14_lt1,  CM_MSJG),
-        COMBO(pl_combo_ms45,  CM_MSJG),
-        COMBO(pl_combo_ms45_lt01,  CM_MSJG),
-        COMBO(pl_combo_ms45_lt02,  CM_MSJG),
-        COMBO(pl_combo_ms45_lt10,  CM_MSJG),
-        COMBO(pl_combo_ms45_lt11,  CM_MSJG),
-        COMBO(pl_combo_ms45_lt12,  CM_MSJG),
-      #endif // COMMUNITY_MODULE_MOUSE_JIGGLER_ENABLE
+      // mouse_jiggler combo entries removed
     };
 
     #if defined(VIA_ENABLE) && defined(PLOOPY_VIAMENUS) && defined(COMBO_SHOULD_TRIGGER)

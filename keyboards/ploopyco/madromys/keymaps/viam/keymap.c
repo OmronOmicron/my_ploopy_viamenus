@@ -30,7 +30,7 @@ enum keymap_keycodes {
     KB_DRAG_SCROLL,
     BETTER_DRAG_SCROLL_MOMENTARY,
     BETTER_DRAG_SCROLL_TOGGLE,
-    PL_MSJG,
+    // PL_MSJG removed
     PL_TSKN,
     PL_TSKP,
     BETTER_DRAG_SCROLL_SNIPER_A_MOMENTARY,
@@ -72,6 +72,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_FNB] = LAYOUT(
         _______, _______, _______, P_SNTGA,
-        PL_MSJG,                   P_DRGTG
+        _______,                   P_DRGTG
     )
 };

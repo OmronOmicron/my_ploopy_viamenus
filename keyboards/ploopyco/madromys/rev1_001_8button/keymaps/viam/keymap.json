@@ -6,7 +6,6 @@
     "keymap": "viam",
     "layout": "LAYOUT",
     "modules": [
-        "plodah/mouse_jiggler",
         "plodah/task_switch"
     ],
     "config": {

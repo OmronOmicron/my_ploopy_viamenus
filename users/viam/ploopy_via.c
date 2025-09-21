@@ -4,7 +4,7 @@
     // #include QMK_KEYBOARD_H
     #include "better_dragscroll.h"
     #include "via.h"
-    #include "mouse_jiggler.h"
+    // mouse_jiggler removed: header and functionality omitted
     #include "ploopy_via.h"
     #include "mouse_gesture.h"
     void ploopyvia_config_load(void) {
@@ -101,11 +101,7 @@
                 break;
 
             case id_ploopystuff_msjiggler_enabled:
-                if( (msJigMainToken != INVALID_DEFERRED_TOKEN) ^ (*value_data) ) {
-                    // ^ is an XOR, buddy
-                    jiggler_toggle();
-                    dprintf("msjiggler_enabled\n");
-                }
+                // mouse_jiggler removed: ignore set requests
                 break;
 
             case id_ploopystuff_pointer_invert_h:
@@ -271,14 +267,8 @@
                 break;
 
             case id_ploopystuff_msjiggler_enabled:
-                if(msJigMainToken != INVALID_DEFERRED_TOKEN){
-                    dprintf("msjiggler_enabled true \n");
-                    *value_data = true;
-                }
-                else{
-                    dprintf("msjiggler_enabled false \n");
-                    *value_data = false;
-                }
+                // mouse_jiggler removed: always report disabled
+                *value_data = false;
                 break;
 
             case id_ploopystuff_pointer_invert_h:

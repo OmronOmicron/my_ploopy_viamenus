@@ -11,7 +11,6 @@
         { "name": "Ploopy Drag Scroll", "title": "Ploopy Drag Scroll", "shortName": "DragScl" },
         { "name": "Better DragSc Moment", "title": "Better Drag Scroll Momentary", "shortName": "Drg Mo" },
         { "name": "Better DragSc Toggle", "title": "Better Drag Scroll Toggle", "shortName": "Drg Tg" },
-        { "name": "Mouse Jiggler Toggle", "title": "Mouse Jiggler Toggle", "shortName": "MsJig" },
         { "name": "Task Switch Next", "title": "Task Switcher Next", "shortName": "Tsk N" },
         { "name": "Task Switch Prev", "title": "Task Switcher Previous", "shortName": "Tsk P" },
         { "name": "Sniper A Mo", "title": "Sniper A Momentary", "shortName": "SnpA Mo" },
@@ -158,11 +157,6 @@
                             "content": ["id_ploopystuff_dpi_multiplier", 0, 2]
                         },
                         {
-                            "label": "Mouse Jiggler",
-                            "type": "toggle",
-                            "content": ["id_ploopystuff_msjiggler_enabled", 0, 3]
-                        },
-                        {
                             "label": "Pointer Invert X",
                             "type": "toggle",
                             "content": ["id_ploopystuff_pointer_invert_h", 0, 4]
@@ -198,8 +192,7 @@
                             "type": "dropdown",
                             "options": [
                                 ["Do Nothing", 0],
-                                ["Dragscroll", 1],
-                                ["Mouse Jiggler", 2]
+                                ["Dragscroll", 1]
                             ],
                             "content": ["id_ploopystuff_gesture_action_h", 0, 12]
                         },
@@ -208,8 +201,7 @@
                             "type": "dropdown",
                             "options": [
                                 ["Do Nothing", 0],
-                                ["Dragscroll", 1],
-                                ["Mouse Jiggler", 2]
+                                ["Dragscroll", 1]
                             ],
                             "content": ["id_ploopystuff_gesture_action_v", 0, 13]
                         },

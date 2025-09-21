@@ -1,6 +1,6 @@
 #if defined(PLOOPY_MSGESTURE_ENABLE) && defined(DEFERRED_EXEC_ENABLE)
   #include "mouse_gesture.h"
-  #include "mouse_jiggler.h"
+  // mouse_jiggler removed
   #include "better_dragscroll.h"
   #include "ploopy_via.h"
 
@@ -17,7 +17,8 @@
       gestureCount              = ploopyvia_config.gesture_count;
     #else
       PLOOPY_MSGESTURE_X.action = GESTURE_ACTION_DRAGSCROLL;
-      PLOOPY_MSGESTURE_Y.action = GESTURE_ACTION_MSJIGGLER;
+  // MSJIGGLER removed: default Y action changed to dragscroll
+  PLOOPY_MSGESTURE_Y.action = GESTURE_ACTION_DRAGSCROLL;
       gestureCount = PLOOPY_MSGESTURE_WIGGLES;
     #endif
   }
@@ -78,7 +79,7 @@
     ploopy_msGestureSwitchCooldown = defer_exec(PLOOPY_MSGESTURE_COOLDOWN, PLOOPY_MSGESTURE_expireCooldown, NULL);
     switch(action){
         case GESTURE_ACTION_MSJIGGLER:
-          jiggler_toggle();
+          // mouse_jiggler removed: no-op for legacy enum value
           break;
         case GESTURE_ACTION_DRAGSCROLL:
           better_dragscroll_toggle(true);
